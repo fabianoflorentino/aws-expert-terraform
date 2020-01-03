@@ -9,7 +9,7 @@ build: ## Make image for use terraform
 
 run: ## Start Terraform
 	@ docker container rm -f terraform
-	@ docker run -it --name terraform -v ${PWD}:/aws -w /aws --entrypoint "" fabianoflorentino/aws-expet-terraform sh
+	@ docker run -it --name terraform -v ${PWD}:/aws -w /aws --entrypoint "" fabianoflorentino/terraform-and-awscli sh
 
 plan: ## Create plan to deploy on AWS with Terraform
 	@terraform plan --out aws-expert.tfplan
