@@ -1,4 +1,3 @@
-/awscli
 .terraform
 *.tfplan
 /backend/.terraform

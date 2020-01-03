@@ -1,0 +1,9 @@
+[default]
+output = json
+region = us-east-1
+
+[profile fabiano.florentino]
+output = json
+region = us-east-1
+role_arn = arn:aws:iam::267823233986:role/CrossRoleDevelopment
+source_profile = fabiano.florentino
