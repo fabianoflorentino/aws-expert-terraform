@@ -4,6 +4,13 @@
 help:
 	@grep -E '^[0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-25s\033[0m %s\n", $$1, $$2, $$3, $$4, $$5}'
 
+build: ## Make image for use terraform
+	@docker build -t fabianoflorentino/terraform-and-awscli .
+
+run: ## Start Terraform
+	@ docker container rm -f terraform
+	@ docker run -it --name terraform -v ${PWD}:/aws -w /aws --entrypoint "" fabianoflorentino/aws-expet-terraform sh
+
 plan: ## Create plan to deploy on AWS with Terraform
 	@terraform plan --out aws-expert.tfplan
 

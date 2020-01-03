@@ -1,12 +1,12 @@
 provider "aws" {
-  region                  = var.default_region
+  region                  = "us-east-1"
   version                 = "~> 2"
-  profile                 = var.profile_name
-  shared_credentials_file = "~/.aws/credencials"
+  profile                 = "fabiano.florentino"
+  shared_credentials_file = "/home/terraform/.aws/credencials"
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = var.bucket_name
+  bucket = "codar-dev-terraform-state"
   acl    = "private"
 
   tags = {

@@ -22,19 +22,18 @@ variable "az_count" {
     default = "2"
 }
 
-# NEW
-variable "instance_name" {
-  description = "Name of instance."
-}
+# variable "instance_name" {
+#   description = "Name of instance."
+# }
 
-variable "instance_type" {
-  description = "Instance type Ex. t2.micro"
-}
+# variable "instance_type" {
+#   description = "Instance type Ex. t2.micro"
+# }
 
-variable "instance_count" {
-  description = "Number of instance to create."
-}
+# variable "instance_count" {
+#   description = "Number of instance to create."
+# }
 
-variable "aws_ami" {
-  default = "ami-0b69ea66ff7391e80"
-}
+# variable "aws_ami" {
+#   default = "ami-0b69ea66ff7391e80"
+# }

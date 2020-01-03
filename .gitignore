@@ -1,3 +1,5 @@
-/backend/.terraform
+/awscli
 .terraform
 *.tfplan
+/backend/.terraform
+/backend/*.tfstate*

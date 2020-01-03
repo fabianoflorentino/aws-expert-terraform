@@ -1,7 +1,7 @@
 resource "aws_security_group" "public" {
   
   count = var.az_count
-  name = "ssh"
+  name  = "ssh"
   
   ingress {
     from_port   = 22
