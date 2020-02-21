@@ -2,3 +2,4 @@
 *.tfplan
 /backend/.terraform
 /backend/*.tfstate*
+.vscode
