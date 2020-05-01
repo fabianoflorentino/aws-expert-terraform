@@ -3,3 +3,6 @@
 /backend/.terraform
 /backend/*.tfstate*
 .vscode
+.ash_history
+fabiano.florentino.pem
+.DS_Store
